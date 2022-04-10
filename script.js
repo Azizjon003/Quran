@@ -22,7 +22,10 @@ let qushimchaqush = async function (number) {
 </section>`;
   document.querySelector(".section_1").insertAdjacentHTML("afterbegin", html);
   oyats(qush);
-  tuliqAylantir(qush);
+  // if (document.querySelector(".audio").paused) {
+  //   document.querySelector(".img").src =
+  //     "./images/play-button-arrowhead (1).png";
+  // }
 };
 
 let qush = async function () {
@@ -46,7 +49,7 @@ let qush = async function () {
 };
 qush();
 // qushimchaqush();
-function oyats(data, sort) {
+function oyats(data) {
   let sana1 = data.number - 1;
   let aylan = arrayBig[sana1];
   let sana = 0;
@@ -115,8 +118,12 @@ document.querySelector(".section_1").addEventListener("click", (e) => {
       e.target.nextElementSibling.pause();
       e.target.src = "./images/play-button-arrowhead (1).png";
     }
+    e.target.nextElementSibling.addEventListener("ended", function () {
+      e.target.src = "./images/play-button-arrowhead (1).png";
+    });
   }
 });
+
 document.querySelector;
 function tuliqAylantir(data) {
   let i = 0;
