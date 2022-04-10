@@ -7,6 +7,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  width: 100vw;
   background-color: #fff;
 }
 .header {
@@ -59,8 +60,8 @@ main {
   font-size: 1.6rem;
 }
 
-img {
-  width: 6rem;
+.imgs {
+  width: 4rem;
 }
 
 /* Keyingi page */
@@ -72,7 +73,7 @@ img {
   position: fixed;
   top: 0;
   overflow-y: auto;
-  transition: all 10s;
+  transition: all 1s;
 }
 .div_header {
   width: 97%;
@@ -144,4 +145,46 @@ img {
   position: absolute;
   z-index: 1000;
   display: none;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  main {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    margin: 2rem 0;
+  }
+  .header {
+    width: 96vw;
+  }
+  .sura_name {
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+  .header {
+    padding: 1rem 1rem;
+  }
+  .div_header {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+  .oyat_box {
+    padding: 2rem 0;
+  }
+
+  .left {
+    font-size: 2.5rem;
+  }
+  .right {
+    align-items: center;
+  }
+  .oyat_about {
+    flex-direction: column-reverse;
+
+    align-items: flex-start;
+  }
+  .imgs {
+    width: 3rem;
+  }
 }

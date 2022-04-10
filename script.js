@@ -100,8 +100,6 @@ function sortSura(array) {
 document.querySelector("main").addEventListener("click", (e) => {
   let number = e.target.closest("div").id;
   qushimchaqush(number);
-  if (e.target.classList.contains("surah_play")) {
-  }
 });
 document.querySelector(".section_1").addEventListener("click", (e) => {
   if (e.target.classList.contains("surah_back")) {
